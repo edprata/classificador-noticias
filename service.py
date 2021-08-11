@@ -1,5 +1,12 @@
 from flask import Flask
+from os import environ
+
+host = environ.get("HOST", '0.0.0.0')
+port = environ.get("PORT", 5000)
+print("HOST={} PORT={}".format(host, port))
+
 app = Flask(__name__)
+app.run(debug=False, host=host, port=port)
 
 
 @app.route("/")
