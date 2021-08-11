@@ -5,10 +5,13 @@ host = environ.get("HOST", '0.0.0.0')
 port = environ.get("PORT", 5000)
 print("HOST={} PORT={}".format(host, port))
 
-app = Flask(__name__)
-app.run(debug=False, host=host, port=port)
+app = Flask(__name__, static_folder='static')
 
 
 @app.route("/")
 def hello_world():
     return "<p>Hello, World!</p>"
+
+
+if __name__ == '__main__':
+    app.run(debug=False, host=host, port=port)
