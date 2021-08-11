@@ -2,10 +2,11 @@ from flask import Flask
 from os import environ
 
 host = environ.get("HOST", '0.0.0.0')
-port = environ.get("PORT", 5000)
+port = environ.get("PORT", 5001)
 print("HOST={} PORT={}".format(host, port))
 
 app = Flask(__name__, static_folder='static')
+application = app.wsgi_app
 
 
 @app.route("/")
