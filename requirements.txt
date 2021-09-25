@@ -14,7 +14,6 @@ py~=1.8.0
 lxml~=4.4.1
 tornado~=6.0.3
 keyring~=18.0.0
-gettext~=0.19.8.1
 markupsafe~=1.1.1
 werkzeug~=0.16.0
 jinja2~=2.10.3
