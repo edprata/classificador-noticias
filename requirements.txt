@@ -25,3 +25,4 @@ setuptools~=41.4.0
 cython~=0.29.13
 future~=0.17.1
 docutils~=0.15.2
+cython
