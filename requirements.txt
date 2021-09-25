@@ -1,4 +1,4 @@
-python==3.9.7
+python==3.9.6
 flask~=1.1.1
 flask-restplus==0.13.0
 gunicorn
