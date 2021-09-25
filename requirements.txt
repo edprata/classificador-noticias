@@ -10,7 +10,7 @@ pip~=19.2.3
 zlib
 wheel~=0.36.2
 brotli~=1.0.7
-openssl~=1.1.1d
+openssl
 cryptography~=2.7
 py~=1.8.0
 lxml~=4.4.1
