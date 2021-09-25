@@ -1,5 +1,5 @@
 scipy
-cython==3.0.0
+cython==3.0.0a9
 gunicorn
 pip==19.2.3
 pandas==0.25.1
