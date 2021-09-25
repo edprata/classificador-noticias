@@ -22,7 +22,6 @@ itsdangerous~=1.1.0
 greenlet~=0.4.15
 gevent~=1.4.0
 setuptools~=41.4.0
-cython~=0.29.13
+cython
 future~=0.17.1
 docutils~=0.15.2
-cython
