@@ -1,9 +1,7 @@
 from os import environ
 from flask import Flask, request
 from src import api_response as resp
-from src import knn_service as model_knn
 from src import lstm_service as model_lstm
-from src import neural_service as model_neural
 from flask_restplus import Api, Namespace, Resource, fields
 
 # Flask config:
@@ -43,15 +41,6 @@ class LstmController(Resource):
     @ns_lstm.response(400, "Bad Request")
     def post(self):
         return classify(model_lstm, request.json)
-
-
-@ns_neural.route('/')
-class NeuralController(Resource):
-    @ns_neural.expect(api_model)
-    @ns_neural.response(201, "Classified successful")
-    @ns_neural.response(400, "Bad Request")
-    def post(self):
-        return classify(model_neural, request.json)
 
 
 def classify(model, news):
