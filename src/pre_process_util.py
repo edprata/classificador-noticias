@@ -40,3 +40,4 @@ def remove_stop_words(text):
 def apply_stem(text):
     return [stemmer_ptbr.stem(word) for word in text]
 
+    

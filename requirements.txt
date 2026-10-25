@@ -8,3 +8,4 @@ nltk==3.4.5
 flask==1.1.1
 flask_restplus
 werkzeug~=0.16.0
+behave
